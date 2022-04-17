@@ -7,12 +7,14 @@ import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CustomDirective } from './custom.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    RepoComponent
+    RepoComponent,
+    CustomDirective
   ],
   imports: [
     BrowserModule,
