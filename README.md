@@ -24,7 +24,9 @@ Github_Search is is a simple application that lets you search for github users, 
 
 -Click on the live link in the about section
 
--Make sure to fill in all details in the form to post your quote.
+-Search the username on the navigation bar.
+
+-Click 'Their Repositories' to view repositories for the user.
 
 [Go Back to the top](#Github_Search)
 
