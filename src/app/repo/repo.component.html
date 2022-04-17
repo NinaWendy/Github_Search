@@ -1,1 +1,30 @@
-<p>repo works!</p>
+<div *ngIf="user" class="repos">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">REPOSITORIES</h4>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div *ngFor="let rep of repo">
+              <div class="row">
+                <div class="col-md-9">
+                  <h5><a href="{{rep.html_url}}" target="_blank">{{rep.name}}</a></h5>
+                  <p class="d">{{rep.description}}</p>
+                  <button class=" btn btn-default d">{{rep.visibility}}</button>
+                  <p class="d" style="font-weight: bold;">Languages: {{rep.topics}}</p>
+                </div>
+                <div class="col-md-3">
+                  <button type="button" class="btn btn-primary">Watchers<span class="badge">{{rep.watchers}}
+                    </span></button>
+                  <br> <br>
+                  <button type="button" class="btn btn-primary">Forks<span class="badge">{{rep.forks}} </span></button>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
