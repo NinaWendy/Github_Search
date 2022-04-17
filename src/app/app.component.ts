@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Github_Search';
+  show:boolean=true;
+  toggle(){
+    this.show=!this.show;
+  }
 }
