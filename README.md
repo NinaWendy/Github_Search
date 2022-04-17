@@ -1,27 +1,61 @@
-# GithubSearch
+# Github_Search
+
+#### By Wendy Nina
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+## Table of Content
 
-## Development server
++ [Description](#description)
++ [Installation Requirement](#Installation)
++ [Technology Used](#technology-used)
++ [Reference](#reference)
++ [License](#license)
++ [Authors Info](#author-Info)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Description
+Github_Search is is a simple application that lets you search for github users, be able to view  their profile information as well as their repositories.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Requirements
+-Either a computer,phone,tablet or an Ipad
 
-## Build
+-Make sure you have access to internet
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-Click on the live link in the about section
 
-## Running unit tests
+-Make sure to fill in all details in the form to post your quote.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[Go Back to the top](#Github_Search)
 
-## Running end-to-end tests
+### Installation Process
+Clone the github repository using either https or ssh or alternatively download the zipped file.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Inside the application folder Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the files.
+## Technology Used
+TypeScript- To add functionality.
 
-## Further help
+HTML-which was used for the templates.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+CSS- used to style the templates.
+
+Bootstrap- which was used to build and style the form.
+
+## Reference
+(https://getbootstrap.com/docs/3.3/components/)
+
+[Go Back to the top](#Github_Search)
+
+# License
+Copyright (c) 2022 [click to view License](LICENSE)
+
+## Authors Info
+Linked In-[Wendy Nina]
+(https://www.linkedin.com/in/wendy-nina-616559196/)
+
+CodeWars-(https://www.codewars.com/users/the@rt_Coder)
+
+[Go Back to the top](#Github_Search)
+
+
+
+
