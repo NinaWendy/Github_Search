@@ -1,5 +1,7 @@
+import { Repo } from './repo';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { User } from './user';
 
 @Injectable({
   providedIn: 'root'
@@ -13,11 +15,11 @@ export class GithubSearchService {
   }
 
   getUser(){
-    return this.http.get('https://api.github.com/users/'+this.username);
+    return this.http.get<User>('https://api.github.com/users/'+this.username);
   }
 
   getRepo(){
-    return this.http.get('https://api.github.com/users/'+ this.username + '/repos')
+    return this.http.get<Repo>('https://api.github.com/users/'+ this.username + '/repos')
   }
   updateUser(username:any){
     this.username=username;
