@@ -8,13 +8,15 @@ import { RepoComponent } from './repo/repo.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomDirective } from './custom.directive';
+import { CustomPipe } from './custom.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     RepoComponent,
-    CustomDirective
+    CustomDirective,
+    CustomPipe
   ],
   imports: [
     BrowserModule,
