@@ -10,9 +10,11 @@ export class UserComponent implements OnInit {
 
   user:any=[];
   repo:any=[];
+  username:any=[];
+
 
   constructor(private _gitService:GithubSearchService) { 
-    
+
     this._gitService.getUser().subscribe(data=>{
       this.user=data;
       console.log(this.user)
@@ -21,6 +23,17 @@ export class UserComponent implements OnInit {
       this.repo=repo;
     });
 
+  }
+  search(){
+    this._gitService.updateUser(this.username);
+    console.log(this.username)
+    this._gitService.getUser().subscribe(data=>{
+    this.user=data;
+    this._gitService.getRepo().subscribe(repo=>{
+     this.repo=repo;
+   });
+   
+   });
   }
 
   ngOnInit(): void {

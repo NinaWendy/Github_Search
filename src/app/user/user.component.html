@@ -1,1 +1,107 @@
-<p>user works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img class="img-fluid" src="../assets/logo-github (1).svg" alt="github logo">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search Username..." [(ngModel)]="username"
+          (keyup.enter)="search()" name="username" aria-label="Search">
+      </form>
+  
+      <div class="cont">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Pull requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Issues</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Marketplace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Explore</a>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+      <img class="bell1" src="../assets/notifications-outline (1).svg" alt="">
+      <ul>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle plus" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            &#10010;
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">New repository</a></li>
+            <li><a class="dropdown-item" href="#">Import repository</a></li>
+            <li><a class="dropdown-item" href="#">New gist</a></li>
+            <li><a class="dropdown-item" href="#">New organization</a></li>
+            <li><a class="dropdown-item" href="#">New project</a></li>
+          </ul>
+        </li>
+      </ul>
+      <img class="bell" src="../assets/person-circle-outline.svg" alt="">
+    </div>
+  </nav>
+  
+  <div class="aside">
+    <img class="profilePic" src={{user.avatar_url}} alt="profile picture">
+    <h4>{{user.name}}</h4>
+    <p class="user">@{{user.login}}</p>
+    <br>
+    <h6>{{user.bio}}</h6>
+    <button class="btn btn-info">View on Github</button> <br> <br>
+    <div class="follow">
+      <span style="font-weight: bold;">{{user.followers}}</span><a class="fol" href=""> Followers</a>
+      <span style="font-weight: bold;">{{user.following}} </span><a class="fol" href="">Following</a>
+    </div>
+  </div>
+  
+  <div class="right">
+    <ul class="links">
+      <li class="bd"><i style="font-size:22px" class="fa">&#xf02d;</i><a href=""> Overview</a></li>
+  
+      <li><i style='font-size:20px' class='fa'>&#xf02e;</i><a href=""> Repositories</a></li>
+      <li><i style='font-size:17px' class='fa'>&#xf15b;</i>
+        <a href=""> Projects</a></li>
+      <li>
+        <i style='font-size:20px' class='fa'>&#xf1b2;</i>
+        <a href=""> Packages</a></li>
+      <li>
+        <i style='font-size:20px' class='fa'>&#xf005;</i>
+        <a href=""> Stars</a></li>
+    </ul>
+    <hr>
+    <div>
+      <div class="panel-body inside">
+        <div class="row">
+          <div class="col col-md-12">
+            <div class="stats">
+              <button type="button" class="btn btn-primary rep1">Public Repositories<span
+                  class="badge">{{user.public_repos}} </span></button>
+  
+              <button type="button" class="btn btn-success rep2">Private Repositories<span
+                  class="badge">{{user.private_repos}}</span></button>
+  
+              <button type="button" class="btn btn-danger">Public Gists<span
+                  class="badge">{{user.public_gists}}</span></button>
+  
+            </div>
+            <br>
+            <div class="list-group">
+              <hr>
+              <li><strong>Email: </strong>{{user.email}}</li> <br>
+              <li><strong>Blog: </strong>{{user.blog}}</li> <br>
+              <li><strong>Location: </strong>{{user.location}}</li><br>
+              <li><strong>Company: </strong>{{user.company}}</li> <br>
+              <li><strong>Available For Hire: </strong>{{user.hireable}}</li> <br>
+              <li><strong>Member Since: </strong>{{user.created_at}}</li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  

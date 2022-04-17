@@ -19,5 +19,8 @@ export class GithubSearchService {
   getRepo(){
     return this.http.get('https://api.github.com/users/'+ this.username + '/repos')
   }
+  updateUser(username:any){
+    this.username=username;
+  }
 
 }
